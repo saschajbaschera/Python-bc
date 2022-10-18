@@ -1,3 +1,6 @@
+#this solution was created with just looking at the end product
+
+
 from art import logo
 
 print(logo)

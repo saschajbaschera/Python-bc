@@ -1,13 +1,12 @@
 
 import random
-from turtle import clear
 from hangman_art import stages, logo
 from hangman_words import word_list
 
 #step 1: choose a random word
 chosen_word = random.choice(word_list)
 print(logo)
-print(f"Psst, your word is {chosen_word}")
+# print(f"Psst, your word is {chosen_word}")
 #creating the blankspaces for the ui
 blankspaces = []
 
@@ -22,7 +21,7 @@ guesses_left = 6
 while "_" in blankspaces and guesses_left > 0:
     guessed_letter = input("Guess a letter: ").lower()
 
-    clear()
+    
 
     if guessed_letter in blankspaces:
               print("You've already guessed this letter!")
