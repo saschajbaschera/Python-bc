@@ -53,14 +53,14 @@ def check_score(computer_cards, user_cards):
 
 
 def play_the_game():
-    play = input("Do you want to play a round of blackjack? Type 'y' to start or type 'n' to close the app.")
+    play = input("Do you want to play a round of blackjack? Type 'y' to start or type 'n' to close the app: ")
     if play == "y":
     #   clear()
       print(logo)
       user_cards = []
       computer_cards = []
   
-      for number in range(0, 2):
+      for _ in range(2):
           user_cards.append(random.choice(cards))
           computer_cards.append(random.choice(cards))
   
@@ -77,7 +77,7 @@ def play_the_game():
               print(f"Computer's first card: {computer_cards[0]}")
           else:
             go_again = False
-      while sum(computer_cards) < 16:
+      while sum(computer_cards) < 17:
         computer_cards.append(draw_card(sum(computer_cards)))
       print(f"Your final hand: {user_cards}, final score: {sum(user_cards)}")
       print(f"Computer's final hand: {computer_cards}, final score: {sum(computer_cards)}")
