@@ -37,26 +37,26 @@ def game():
         if score > 0:
             print(f"You're right! Current score: {score}")
      
-        #show name, discription and the country of A
+        # show name, discription and the country of A
         print(f'Compare A: {contester_a["name"]}, a {contester_a["description"]}, from {contester_a["country"]}')
 
-        #show vs ascii symbol // SKIP
+        # show vs ascii symbol // SKIP
         print(vs)
 
-        #Choose a random opponent from the game data set and set as B
+        # Choose a random opponent from the game data set and set as B
         contester_b = random_contester()
 
-        #Make sure it's not the same as A
+        # Make sure it's not the same as A
         while contester_a == contester_b:
             contester_b = random_contester()
 
-        #Print contester b
+        # Print contester b
         print(f'Against B: {contester_b["name"]}, a {contester_b["description"]}, from {contester_b["country"]}')
 
-        #Ask who has more followers A or B
+        # Ask who has more followers A or B
         guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
-        #write a function to Compare A and B follower, and return if true or false
+        # write a function to Compare A and B follower, and return if true or false
         result = compare(contester_a["follower_count"], contester_b["follower_count"], guess)
         # if guess was True, add one to the score
         if result == True:
