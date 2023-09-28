@@ -29,7 +29,7 @@ scissors = '''
 
 my_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-if my_choice >=3 or my_choice <0:
+if my_choice >= 3 or my_choice < 0:
     print("you typed an invalid number, computer wins")
 else:
     rps = [rock, paper, scissors]
@@ -54,4 +54,3 @@ else:
         print("I win.")
     elif computer_choice == 2 and my_choice == 1:
         print("Computer wins")
-
