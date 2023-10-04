@@ -6,7 +6,7 @@ import time
 MY_LAT = 47.443970
 MY_LONG = 8.627090
 MY_EMAIL = "dudesaschaa@gmail.com"
-MY_PASSWORD = "jwuzdmwdxoxtiabi"
+MY_PASSWORD = ""
 
 
 def is_overhead():
